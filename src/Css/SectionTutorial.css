@@ -1,0 +1,53 @@
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 50px;
+    background-color: #23272e;
+}
+
+.title-tutorial {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    height: 0px;
+    margin: 0;
+}
+
+.title-tutorial-sm {
+    line-height: 35px;
+    font-size: 1.8rem;
+    color: #f0f0f0;
+}
+
+.nota {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #68a69c;
+    font-size: 1.7rem;
+}
+
+.nota i {
+    font-size: 1.9rem;
+    padding: 0 20px 0 0;
+}
+
+.learnTutorial {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #25353a;
+}
+
+.title-tutorial-sm {
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 800px) {
+    .tutorial { padding: 15px 20px; }
+}

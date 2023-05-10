@@ -1,0 +1,45 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 50px;
+    background-color: #23272e;
+}
+
+.title-inicio {
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    height: 0px;
+    margin: 0;
+}
+
+.learn {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: #343a46;
+}
+
+.separador {
+    display: flex;
+    height: 100%;
+}
+
+.title-min {
+    width: 100%;
+    color: #f0f0f0;
+    font-size: 1.5rem;
+}
+
+.learn ul li { font-size: 1rem; }
+
+@media only screen and (max-width: 1050px) {
+    .inicio { display: flex; }
+}
+
+@media only screen and (max-width: 800px) {
+    .inicio { padding: 15px 20px; }
+}

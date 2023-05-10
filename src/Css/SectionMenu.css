@@ -1,0 +1,129 @@
+.container-fluid { padding: 0; background-color: #23272e; padding-bottom: 10px;}
+
+.menu-desplegate {
+    width: 310px;
+    height: 100vh;
+    background-color: #23272e;
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+}
+
+.link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: #23272e;
+    font-size: 1rem;
+    color: #d8d8d8;
+    padding: 12px 10px 12px 20px;
+    border-radius: 0 15px 15px 0;
+    font-weight: 600;
+} .link:hover {
+    background-color: #343a46;
+}
+
+.title {
+    color: #788192;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.title-spacing {
+    padding-top: 15px;
+    border-top: 1px solid #343a46;
+}
+
+i { display: flex; align-items: center; font-size: 1.4rem;}
+
+.desplegate {
+    padding-left: 30px;
+    position: absolute;
+    transform: translateX(-2000%);
+}
+
+.agregar {
+    position: relative;
+    transform: translateX(0%);
+    font-weight: 400;
+} .agregar:hover {
+    cursor: pointer;
+}
+
+.rotate :nth-child(1) {
+    color: #149cc8;
+    transition: 500ms;
+    transform: rotate(45deg);
+}
+
+.buttonSearch {
+    display: none;
+}
+
+@media only screen and (min-width: 1050px) {
+    .display {
+        display: flex;
+    }
+    .section-menu {
+        transform:  translateX(0%);
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .display {
+        display: none;
+    }
+    .section-menu {
+        transform:  translateX(-100%);
+        position: relative;
+    }
+    .menu-desplegate {
+        width: 100%;
+    }
+    .menu {
+        display: flex;
+    }
+    .mostrar-menu {
+        width: 310px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .buttonSearch {
+        display: flex;
+    }
+    .search {
+        display: none;
+    }
+    .op {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.mostrar-menu {
+    transform: translateX(0%);
+    width: 100%;
+}
+
+@media only screen and (min-width: 1050px) {
+    .mostrar-menu {
+        width: 310px;
+    }
+}
